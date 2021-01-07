@@ -14,7 +14,7 @@ dictmap = {}
 
 def load_dict(code,fn):
   dictmap[code] = [] 
-  with open(fn,"r") as f:
+  with open(fn,"r",encoding="utf-8") as f:
     for l in f:
       if l.startswith('#') or l.startswith(' '):
         continue
